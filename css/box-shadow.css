@@ -1,0 +1,42 @@
+div {
+    background-color: #CCC;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    float: left;
+}
+
+/* box-shadow: x축이동거리, y축이동거리, 퍼짐정도, 색상; */
+
+.box1 {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.box2 {
+    box-shadow: 0 0 20px dodgerblue;
+}
+
+.box3 {
+    box-shadow: 10px 10px 0 crimson;
+}
+
+.box4 {
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.22);
+}
+
+.box5 {
+    box-shadow: inset 0px 0px 100px rgba(255, 255, 255, 0.9);
+}
+
+.box6 {
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.35);
+}
+
+.heading {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: gold;
+    /*text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.26);*/
+    text-shadow: 5px 5px 0 dodgerblue, 10px 10px 0 rgba(0, 0, 0, 0.21);
+}

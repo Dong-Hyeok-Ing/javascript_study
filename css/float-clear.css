@@ -1,0 +1,60 @@
+.parent {
+    border: 5px solid red;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.top {
+    background-color: purple;
+    height: 100%;
+}
+
+.left {
+    background-color: gray;
+    height: 100px;
+    width: 20%;
+    float: left;
+}
+
+.right {
+    background-color: orange;
+    height: 100px;
+    width: 80%;
+    float: right;
+}
+
+.clear {
+    background-color: purple;
+    height: 100px;
+    clear: both;
+}
+
+/* 아래 다른 방법
+section {
+    border: 5px solid blue;
+    width: 100%;
+    overflow: hidden;
+}
+
+article {
+    background-color: gold;
+    width: 20%;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+    margin: 0 0 0 10px;
+}*/
+
+section {
+    border: 5px solid black;
+    text-align: left;
+}
+
+section article {
+    background-color: gold;
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}

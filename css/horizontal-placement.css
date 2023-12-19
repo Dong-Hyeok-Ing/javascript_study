@@ -1,0 +1,19 @@
+.parent {
+    border: 5px solid red;
+    width: 600px;
+    /*height: 200px; 자식요소의 높이값과 동일하게 1차원적으로 해결*/
+    overflow: hidden; /*자식요소의 높이값이 동적으로 할당되어도 자동으로 맞춰줌*/
+    text-align: center;
+}
+
+.child {
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    /*float: right;*/ /*부모요소위에 둥둥 뜬다*/
+    display: inline-block; /*인라인 블록요소는 마진 오토시 중앙으로 갈수 없음 블럭으로 처리해야됨*/
+    /*margin: auto;*/
+}
+
+/*inline 요소를 중앙으로 보낼 때는 부모에서 컨트롤해야 하며
+block 요소를 중앙으로 보낼 때는 자기자신으로 중앙 정렬해야 한다.*/ 
