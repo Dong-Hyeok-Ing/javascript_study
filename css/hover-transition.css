@@ -1,0 +1,16 @@
+a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+a:hover {
+    background-color: black;
+    color: #fff;
+}
