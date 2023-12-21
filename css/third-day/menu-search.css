@@ -1,0 +1,53 @@
+.btn {
+    /*border: 1px solid black;*/
+    width: 600px;
+}
+.btn span {
+    background-color: white;
+    padding: 5px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn span.active{
+    background-color: gray;
+}
+
+.btn a{
+    background-color: red;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.btn a.active{
+    background-color: blue;
+}
+
+.menu {
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    /*border: 1px !**!solid red;*/
+    text-align: center; /*전부 인라인 요소니까 여기다 text-align center 줘도 된다*/
+}
+
+.menu li > a {
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid white;
+}
+.sub-menu {
+    border-bottom: 1px solid black;
+    display: none; /*a에 display none 주게되면 안된다..왜..? */
+}
+.sub-menu a {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
