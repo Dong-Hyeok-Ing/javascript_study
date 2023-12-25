@@ -36,12 +36,12 @@ body {
 
 .box svg circle {
     fill: transparent;
-    stroke: #3498db;
+    stroke: red;
     stroke-width: 20;
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     stroke-linecap: round;
-    animation: stroke 3.5s steps(500) forwards;
+    animation: stroke 2s steps(500) infinite;
 }
 .box .counter {
     position: absolute;
@@ -49,23 +49,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 40px;
+    height: 30px;
     color: white;
     text-align: center;
     overflow: hidden;
 }
 .box .counter span {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: bold;
 }
 .box .counter span:after {
-    content: "0%\A 1%\A 2%\A 3%\A 4%\A 5%\A 6%\A 7%\A 8%\A 9%\A 10%\A 11%\A 12%\A 13%\A 14%\A 15%\A 16%\A 17%\A 18%\A 19%\A 20%\A 21%\A 22%\A 23%\A 24%\A 25%\A 26%\A 27%\A 28%\A 29%\A 30%\A 41%\A 42%\A 43%\A 44%\A 45%\A 46%\A 47%\A 48%\A 49%\A 50%\A 51%\A 52%\A 53%\A 54%\A 55%\A 56%\A 57%\A 58%\A 59%\A 60%\A 61%\A 62%\A 63%\A 64%\A 65%\A 66%\A 67%\A 68%\A 69%\A 70%\A 71%\A 72%\A 73%\A 74%\A 75%\A 76%\A 77%\A 78%\A 79%\A 80%\A 81%\A 82%\A 83%\A 84%\A 85%\A 86%\A 87%\A 88%\A 89%\A 90%\A 91%\A 92%\A 93%\A 94%\A 95%\A 96%\A 97%\A 98%\A 99%\A 100%";
+    /*content: "0%\A 1%\A 2%\A 3%\A 4%\A 5%\A 6%\A 7%\A 8%\A 9%\A 10%\A 11%\A 12%\A 13%\A 14%\A 15%\A 16%\A 17%\A 18%\A 19%\A 20%\A 21%\A 22%\A 23%\A 24%\A 25%\A 26%\A 27%\A 28%\A 29%\A 30%\A 41%\A 42%\A 43%\A 44%\A 45%\A 46%\A 47%\A 48%\A 49%\A 50%\A 51%\A 52%\A 53%\A 54%\A 55%\A 56%\A 57%\A 58%\A 59%\A 60%\A 61%\A 62%\A 63%\A 64%\A 65%\A 66%\A 67%\A 68%\A 69%\A 70%\A 71%\A 72%\A 73%\A 74%\A 75%\A 76%\A 77%\A 78%\A 79%\A 80%\A 81%\A 82%\A 83%\A 84%\A 85%\A 86%\A 87%\A 88%\A 89%\A 90%\A 91%\A 92%\A 93%\A 94%\A 95%\A 96%\A 97%\A 98%\A 99%\A 100%";*/
+    content: "B\A Bo\A Boo\A Boot\A Booti\A Bootin\A Booting\A Booting.\A Booting..\A Booting...";
     position: absolute;
     white-space: pre;
     left: 50%;
     transform: translateX(-50%);
-    animation: animate 3s steps(90) forwards;
+    /*animation: animate 3s steps(90) forwards;*/
+    animation: animate 2s steps(9) infinite;
 }
 
 h2 {
@@ -78,11 +80,17 @@ h2 {
 }
 
 @keyframes animate {
-    0% {
+   /* 0% {
         top: 0%;
     }
     100% {
         top: -3600px;
+    }*/
+     0% {
+        top: 0%;
+    }
+    100% {
+        top: -270px;
     }
 }
 @keyframes stroke {
