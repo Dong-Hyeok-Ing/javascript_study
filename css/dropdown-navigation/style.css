@@ -13,11 +13,11 @@ a {
     text-decoration: none;
 }
 .dropdown {
-    border: 1px solid red;
     width: 200px;
+    display: inline-block;
 }
 .dropdown-btn {
-    width: 200px;
+    width: inherit;
     padding: 10px;
     font-size: 18px;
     background-color: yellowgreen;
@@ -29,7 +29,6 @@ a {
 .dropdown-submenu {
     display: none;
     width: inherit;
-    border: 1px solid blue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
 }
 .dropdown-submenu a {
