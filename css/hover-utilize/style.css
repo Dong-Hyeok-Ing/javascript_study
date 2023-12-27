@@ -21,10 +21,10 @@ a:hover {
 }
 img {
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .items {
-    border: 1px solid blue;
     text-align: center;
 }
 .item {
@@ -50,6 +50,35 @@ img {
     opacity: 0;
     transition: 0.7s;
 }
-.item:hover .caption{
+.item:hover .caption {
     opacity: 1;
+}
+.item:hover span{
+    display: block;
+}
+.tooltip{
+    transition: 1s;
+}
+.tooltip span {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.tooltip span:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    top: -4px;
+    left: 50%;
 }
