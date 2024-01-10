@@ -29,6 +29,7 @@ body {
 }
 .app-ui:hover {
     box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.34);
+    transform: rotate(20deg) skewX(-10deg);
 }
 .app-ui img {
     position: absolute;

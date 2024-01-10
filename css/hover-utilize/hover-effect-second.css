@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway$display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #222;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.gnb {
+    list-style: none;
+    padding: 50px 30px;
+    margin: 0;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(16, 15, 15, 0.49);
+    display: flex; /*3번째방법*/
+}
+
+.gnb li {
+    /*display: inline-block; 1번째*/
+    /*float: left;
+    width: 120px;
+    box-sizing: border-box;
+    text-align: center; 2번째*/
+    flex: 1;
+    text-align: center;
+}
+
+.gnb li a {
+    font-size: 14px;
+    position: relative;
+}
+
+.gnb li a:before {
+    content: '';
+    position: absolute;
+    background-color: dodgerblue;
+    height: 2px;
+    width: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gnb li a:hover:before {
+    width: 100%;
+}
