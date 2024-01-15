@@ -11,7 +11,7 @@ body {
     align-items: center;
 }
 a {
- text-decoration: none;
+    text-decoration: none;
 }
 
 .gnb {
@@ -22,7 +22,7 @@ a {
     padding-bottom: 5px;
 }
 .gnb a {
-
+    /*border: 1px solid red;*/
     width: 80px;
     display: inline-block;
     height: 30px;
@@ -32,28 +32,27 @@ a {
     overflow: hidden;
 }
 
-/*span은 인라인요소기 때문에 높이값을 가질 수 없다.*/
-.gnb a span {
-    position: absolute; /*position : absolute를 주는 순간에 모든 요소는 전부 인라인블럭으로 변함.*/
+.gnb a:before,
+.gnb a:after {
+    content: attr(data-attribute);
+    position: absolute;
     width: 100%;
-    height: 100%;
     transition: 0.5s;
 }
-.gnb a span:nth-child(1) {
+.gnb a:before {
     top: 0;
     left: 0;
 }
-.gnb a span:nth-child(2) {
+.gnb a:after {
     top: 100%;
     left: 0;
     color: #45B649;
 }
 
-.gnb a:hover span:nth-child(1) {
+.gnb a:hover:before {
     top: -100%;
 }
-.gnb a:hover span:nth-child(2) {
+.gnb a:hover:after {
     top: 0;
 }
-
 
